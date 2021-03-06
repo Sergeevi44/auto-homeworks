@@ -1,3 +1,4 @@
-p {
+.columns {
   text-indent: 40px;
+  column-count: 2;
 }
