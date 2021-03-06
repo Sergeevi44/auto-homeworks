@@ -8,26 +8,21 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<div>
-    <div class="up" data-line="overline" data-style="wavy" data-color="red">
-        <span>Overline</span>
-    </div>
-    <div class="through" data-line="line-through" data-style="dashed" data-color="green">
-        <span>Line-through</span>
-    </div>
-    <div class="down" data-line="underline" data-style="solid" data-color="blue">
-        <span>Underline</span>
-    </div>
-    <div class="no" data-line="none">
-        <span>None</span>
-    </div>
-    <div class="combi" data-line="underline overline" data-style="double" data-color="grey">
-        <span>Combination</span>
-    </div>
-</div>
+<ol>
+    <li class="one" data-x="3px" data-y="3px" data-blur="2px" data-color="hsla(0, 0%, 0%, .5)">
+        CSS-свойство text-shadow добавляет тени к тексту и всем элементам text-decoration.
+    </li>
+    <li>К одному тексту можно применить несколько теней:
+        <span class="rings" data-colors="blue black red green">O</span>
+    </li>
+</ol>
 </body>
 </html>
-<!--Найдите элементы с классом в html коде и селектор с тем же классом в css коде.
-Для каждого такого элемента html перенесите значения из аргументов data-line, data-style и data-color в качестве значений для свойства text-decoration.
-Для селектора с классом no перезапишите значение text-decoration с помощью значения из data-line.
+<!--Для элемента li с классом one задай тень для текста. Для этого в коде html у элемента li с классом one найди атрибуты data. И задай в css коде селектору класса one свойство text-shadow со значениями:
+смещение X (по горизонтали) взятое из значения атрибута data-x
+смещение Y (по вертикали) взятое из значения атрибута data-y
+blur (размытие) взятое из значения атрибута data-blur
+color (цвет) взятое из значения атрибута data-color
+Для элемента li с классом rings задай 4 тени разного цвета для буквы O. Селектору rings уже задано свойство text-shadow состоящее из 4 теней на разном расстоянии. Для того, чтобы задать цвет, в коде html у элемента li с классом one найди атрибут data-colors. Добавь эти цвета к значениям свойства text-shadow селектора rings согласно синтаксису для этого свойства (т.е. цвет должен быть в конце перчисления - перед запятой или точкой с запятой). Порядок цветов показан на рисунке:
+'Олимпийские кольца'
  -->
