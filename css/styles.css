@@ -1,10 +1,10 @@
 .items {
-  word-spacing: 1rem;
+  letter-spacing: 0.25rem;
 }
 /*  Напиши код под этой строкой */
 .item-less {
-  word-spacing: -0.25rem;
+  letter-spacing: -0.1rem;
 }
 .item-normal {
-  word-spacing: normal;
+  letter-spacing: normal;
 }
