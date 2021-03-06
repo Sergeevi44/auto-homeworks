@@ -9,14 +9,25 @@
 </head>
 <body>
 <div>
-    <div data-transform="none"><span>NoNe</span></div>
-    <div data-transform="uppercase"><span>uppercase</span></div>
-    <div data-transform="lowercase"><span>LOWERCASE</span></div>
-    <div data-transform="capitalize"><span>capitalize</span></div>
+    <div class="up" data-line="overline" data-style="wavy" data-color="red">
+        <span>Overline</span>
+    </div>
+    <div class="through" data-line="line-through" data-style="dashed" data-color="green">
+        <span>Line-through</span>
+    </div>
+    <div class="down" data-line="underline" data-style="solid" data-color="blue">
+        <span>Underline</span>
+    </div>
+    <div class="no" data-line="none">
+        <span>None</span>
+    </div>
+    <div class="combi" data-line="underline overline" data-style="double" data-color="grey">
+        <span>Combination</span>
+    </div>
 </div>
 </body>
 </html>
-<!--Задай или измени свойство text-transform. Значение возьмите из значения аргумента data-transform в коде html.
-
-Обратите внимание на то, что значение применится к тексту из элемента span.
+<!--Найдите элементы с классом в html коде и селектор с тем же классом в css коде.
+Для каждого такого элемента html перенесите значения из аргументов data-line, data-style и data-color в качестве значений для свойства text-decoration.
+Для селектора с классом no перезапишите значение text-decoration с помощью значения из data-line.
  -->

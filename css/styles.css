@@ -1,15 +1,21 @@
-[data-transform='none'] {
-  text-transform: none;
+body {
+  font-size: 36px;
+  padding: 1rem;
 }
 
-[data-transform='uppercase'] {
-  text-transform: uppercase;
+/* Напиши код под этой строкой */
+.up {
+  text-decoration: overline wavy red;
 }
-
-[data-transform='lowercase'] {
-  text-transform: lowercase;
+.through {
+  text-decoration: line-through dashed green;
 }
-
-[data-transform='capitalize'] {
-  text-transform: capitalize;
+.down {
+  text-decoration: underline solid blue;
+}
+.no {
+  text-decoration: none;
+}
+.combi {
+  text-decoration: underline overline double grey;
 }
