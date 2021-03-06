@@ -35,11 +35,11 @@
 .box,
 .card {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   background-color: blueviolet;
 }
 
 .letter::first-letter {
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 72px;
 }
