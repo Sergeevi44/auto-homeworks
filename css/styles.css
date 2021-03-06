@@ -1,45 +1,15 @@
-.boxes,
-.cards,
-.letter {
-  font-size: 36px;
-  height: 100px;
-  padding: 1rem;
-  background-color: goldenrod;
-  margin-bottom: 1rem;
+[data-transform='none'] {
+  text-transform: none;
 }
 
-.box-48 {
-  font-size: 48px;
+[data-transform='uppercase'] {
+  text-transform: uppercase;
 }
 
-.box-72 {
-  font-size: 72px;
+[data-transform='lowercase'] {
+  text-transform: lowercase;
 }
 
-.card {
-  height: 36px;
-  width: 18px;
-}
-
-.card-48 {
-  height: 48px;
-  width: 36px;
-}
-
-.card-72 {
-  height: 72px;
-  width: 48px;
-}
-
-/* Напиши код под этой строкой */
-.box,
-.card {
-  display: inline-block;
-  vertical-align: bottom;
-  background-color: blueviolet;
-}
-
-.letter::first-letter {
-  vertical-align: bottom;
-  font-size: 72px;
+[data-transform='capitalize'] {
+  text-transform: capitalize;
 }
