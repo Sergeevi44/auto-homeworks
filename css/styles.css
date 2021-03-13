@@ -1,10 +1,9 @@
-.items {
-  letter-spacing: 0.25rem;
+.parent {
+  background: teal;
+  margin-bottom: 1rem;
 }
-/*  Напиши код под этой строкой */
-.item-less {
-  letter-spacing: -0.1rem;
-}
-.item-normal {
-  letter-spacing: normal;
+
+.child {
+  background: salmon;
+  width: 50%
 }
