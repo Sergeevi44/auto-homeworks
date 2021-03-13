@@ -4,6 +4,7 @@
 }
 
 .child {
+  min-width: 200px;
+  width: 2%;
   background: salmon;
-  width: 50%
 }
