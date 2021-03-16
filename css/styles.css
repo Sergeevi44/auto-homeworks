@@ -1,10 +1,9 @@
 .parent {
   background: teal;
+  min-height: 30px;
   margin-bottom: 1rem;
 }
 
 .child {
-  max-width: 200px;
-  width: 90%;
   background: salmon;
 }
