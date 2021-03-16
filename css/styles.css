@@ -3,17 +3,17 @@
   height: 300px;
   background-color: teal;
   box-sizing: border-box;
+  border-top: 1px solid transparent;
 }
 
 .child {
-  border: 1px solid #fff;
-  background-color: goldenrod;
-  height: 50%;
   width: 50%;
+  height: 50%;
+  border: 1px solid #fff;
   padding-left: 10%;
   margin-top: 20%;
+  background-color: goldenrod;
 }
-
 .inner {
   background: red;
   height: 100%;
