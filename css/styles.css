@@ -1,9 +1,5 @@
-.parent {
+.card {
   background: teal;
-  min-height: 30px;
-  margin-bottom: 1rem;
-}
-
-.child {
-  background: salmon;
+  width: 200px;
+  min-height: 300px;
 }
