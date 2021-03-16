@@ -1,5 +1,12 @@
-.card {
-  background: teal;
+.parent {
   width: 200px;
-  min-height: 300px;
+  min-height: 150px;
+  background-color: teal;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.child {
+  min-height: 150px;
+  background-color: goldenrod;
 }
