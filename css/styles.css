@@ -1,23 +1,32 @@
-a {
-  text-decoration: none;
+body {
+  font-size: 20px;
 }
 
+/* 
+  ширина container 480 
+  или 3 раза по 160   
+*/
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 480px;
+  width: 90%;
   margin: auto;
-  padding: 15px;
+  padding: 15px 0;
   background: burlywood;
   box-sizing: border-box;
-}
-
-.nav-menu {
   display: flex;
-  list-style: none;
+  justify-content: flex-end;
 }
 
-.nav-menu_link {
+.box {
+  width: 130px;
+  min-height: 75px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 15px;
+}
+
+.box-left {
+  margin-right: auto;
 }
