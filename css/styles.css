@@ -3,29 +3,25 @@ body {
 }
 
 /* 
-  2 * 15 - это размер, 
-  который box-sizing: border-box 
-  отнял у width и height
-
-  ширина container 480  - (2 * 15)
-  или 3 раза по 160 - (2 * 15)  
+  ширина container 480 
+  или 3 раза по 160   
 */
 .container {
-  display: flex;
-  justify-content: space-between;
   width: 480px;
   margin: auto;
-  padding: 15px;
+  padding: 15px 0;
   background: burlywood;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
 }
 
 .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 130px;
   min-height: 75px;
   background-color: teal;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
