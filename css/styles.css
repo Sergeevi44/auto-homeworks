@@ -1,25 +1,23 @@
-body {
-  font-size: 20px;
+a {
+  text-decoration: none;
 }
 
 .container {
-  width: 480px;
-  margin: auto;
-  padding: 15px 15px 0;
-  background: burlywood;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  max-width: 480px;
+  margin: auto;
+  padding: 15px;
+  background: burlywood;
+  box-sizing: border-box;
 }
 
-.box {
-  margin-bottom: 15px;
-  width: 130px;
-  min-height: 75px;
-  background-color: teal;
-  color: #fff;
+.nav-menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  list-style: none;
+}
+
+.nav-menu_link {
+  margin: 0 15px;
 }
