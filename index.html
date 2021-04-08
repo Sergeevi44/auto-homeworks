@@ -8,30 +8,18 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<ul class="items">
-    <li class="item">
-        <a href="#" class="link">
-            <svg class="link-icon" width="24" height="24">
-                <use href="sprite-with-fill.svg#icon-delete"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="item">
-        <a href="#" class="link">
-            <svg class="link-icon" width="24" height="24">
-                <use href="sprite-with-fill.svg#icon-pen"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
+<div class="container">
+    <div class="box">
+        <span>x</span>
+    </div>
+</div>
 </body>
 </html>
-<!--Задайте hover для смены цвета svg иконок и фона.
+<!--Элемент с классом box надо переместить вниз и вправо на 50%. Для этого
 
-Для этого:
+измени свойство position на absolute;
+задай начало отсчета и направление с помощью свойств left и top со значением в 50%;
+Убедись что
 
-селектору класса link задайте цвет текста с помощью переменной --accent;
-
-селектору класса link-icon  задайте переменную --icon-color со значением, необходимым для получения цвета текста родительского элемента;
-
-селектору класса link c псевдоклассом :hover задайте цвет текста с помощью переменной --primay;-->
+смещение происходит относительно левого верхнего угла элемента, т.к. именно он попадает в заданную точку - центр прямоугольника;
+при смещении элемента, вместе с ним перемещаются его потомки: элемент span и текст.-->
