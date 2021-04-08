@@ -8,18 +8,50 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<div class="container">
-    <div class="box">
-        <span>x</span>
-    </div>
+<div class="container-fluid">
+    <section>
+        <h2>Инлайн блоки</h2>
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <div class="container">
+            <div class="box">4</div>
+            <div class="box by-margin">margin</div>
+            <div class="box">6</div>
+        </div>
+        <div class="container">
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+    </section>
+    <section>
+        <h2>Инлайн блоки</h2>
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <div class="container">
+            <div class="box">4</div>
+            <div class="box by-position">relative</div>
+            <div class="box">6</div>
+        </div>
+        <div class="container">
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+    </section>
 </div>
 </body>
 </html>
-<!--Элемент с классом box надо переместить вниз и вправо на 50%. Для этого
+<!--Для двух элементов, расположенных среди других элементов, задайте смещение вниз и вправо на 2rem. Для этого:
 
-измени свойство position на absolute;
-задай начало отсчета и направление с помощью свойств left и top со значением в 50%;
-Убедись что
+Для элемента с классом by-position задайте свойство position: relative и затем осуществите смещение свойствами top и left.
 
-смещение происходит относительно левого верхнего угла элемента, т.к. именно он попадает в заданную точку - центр прямоугольника;
-при смещении элемента, вместе с ним перемещаются его потомки: элемент span и текст.-->
+Для элемента с классом by-margin осуществите смещение свойствами margin-top и margin-left.
+
+Убедись, что элемент со свойством position: relative при смещении не изменил положение соседних элементов.-->
