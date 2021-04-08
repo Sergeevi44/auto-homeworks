@@ -10,36 +10,36 @@
 <body>
 <div class="container-fluid">
     <section>
-        <h2>Инлайн блоки</h2>
-        <div class="container">
+        <h2>Flex</h2>
+        <div class="container display-flex">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
         </div>
-        <div class="container">
+        <div class="container display-flex">
             <div class="box">4</div>
             <div class="box by-margin">margin</div>
             <div class="box">6</div>
         </div>
-        <div class="container">
+        <div class="container display-flex">
             <div class="box">7</div>
             <div class="box">8</div>
             <div class="box">9</div>
         </div>
     </section>
     <section>
-        <h2>Инлайн блоки</h2>
-        <div class="container">
+        <h2>Flex</h2>
+        <div class="container display-flex">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
         </div>
-        <div class="container">
+        <div class="container display-flex">
             <div class="box">4</div>
-            <div class="box by-position">relative</div>
+            <div class="box  by-position">relative</div>
             <div class="box">6</div>
         </div>
-        <div class="container">
+        <div class="container display-flex">
             <div class="box">7</div>
             <div class="box">8</div>
             <div class="box">9</div>
@@ -48,10 +48,10 @@
 </div>
 </body>
 </html>
-<!--Для двух элементов, расположенных среди других элементов, задайте смещение вниз и вправо на 2rem. Для этого:
+<!--Для двух элементов, расположенных среди других элементов, задайте смещение на 2rem на все 4-ре стороны. Для этого:
 
-Для элемента с классом by-position задайте свойство position: relative и затем осуществите смещение свойствами top и left.
+Для элемента с классом by-position задайте свойство position: relative и затем осуществите смещение свойствами top, left, bottom и right.
 
-Для элемента с классом by-margin осуществите смещение свойствами margin-top и margin-left.
+Для элемента с классом by-margin осуществите смещение свойством margin и значением 2rem.
 
-Убедись, что элемент со свойством position: relative при смещении не изменил положение соседних элементов.-->
+Убедись, что элемент со свойством position: relative при смещении проигнорировал значения bottom и right.   -->
