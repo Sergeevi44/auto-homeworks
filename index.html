@@ -8,15 +8,30 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <a href="#" class="link">
-        <svg class="link-icon" width="24" height="24">
-            <use href="sprite-with-fill.svg#icon-pen">
-            </use>
-        </svg>
-        Оставьте отзыв
-    </a>
+<ul class="items">
+    <li class="item">
+        <a href="#" class="link">
+            <svg class="link-icon" width="24" height="24">
+                <use href="sprite-with-fill.svg#icon-delete"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="item">
+        <a href="#" class="link">
+            <svg class="link-icon" width="24" height="24">
+                <use href="sprite-with-fill.svg#icon-pen"></use>
+            </svg>
+        </a>
+    </li>
+</ul>
 </body>
 </html>
-<!--В файле sprite-with-fill.svg используется css переменная --icon-color. Сделай так, чтобы svg иконка с классом link-icon меняла цвет вместе с цветом текста ссылки элемента с классом link.
+<!--Задайте hover для смены цвета svg иконок и фона.
 
-Для этого в селекторе link-icon объяви переменную --icon-color и задай этой переменной значение, при котором бы наследовался цвет от родителя .-->
+Для этого:
+
+селектору класса link задайте цвет текста с помощью переменной --accent;
+
+селектору класса link-icon  задайте переменную --icon-color со значением, необходимым для получения цвета текста родительского элемента;
+
+селектору класса link c псевдоклассом :hover задайте цвет текста с помощью переменной --primay;-->
