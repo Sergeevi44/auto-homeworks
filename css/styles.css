@@ -1,6 +1,8 @@
-.cite::before {
-  content: '\275D';
-}
-.cite::after {
-  content: '\275E';
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    hsl(0, 100%, 30%),
+    hsl(270, 100%, 30%) 75%
+  );
 }
