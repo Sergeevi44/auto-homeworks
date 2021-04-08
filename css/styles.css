@@ -2,21 +2,19 @@
   display: flex;
   padding-top: 15px;
 }
-.wrp-image {
-  width: 240px;
+.images {
   border: 1px solid gold;
   margin: 0 15px 15px;
-}  */
+  
+} */
 .container {
   display: flex;
   padding-top: 15px;
 }
-.wrp-image {
-  width: 240px;
+.images {
   border: 1px solid gold;
   margin: 0 15px 15px;
-}
-.images {
-  display: block;
-  width: 100%;
+  width: 240px;
+  height: 320px;
+  object-fit: cover;
 }
