@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <ul class="items">
-        <li class="item"></li>
-        <li class="item" data-clip="padding-box"></li>
-        <li class="item" data-clip="content-box"></li>
-        <li class="item text" data-clip="text">
-            Текст
-        </li>
-    </ul>
+    <div class="container">
+        <a class="wrp-image" href="#">
+            <img class="images" src="https://i.ibb.co/1nm708q/hands-typing.jpg" alt="Печать на клавиатуре ноутбука">
+        </a>
+        <div class="wrp-image">
+            <img class="images" src="https://i.ibb.co/1nm708q/hands-typing.jpg" alt="Печать на клавиатуре ноутбука">
+        </div>
+    </div>
 </body>
 </html>
-<!--В html есть элементы с атрибутом data-clip с разными значениями. Эти атрибуты выступают в качестве селекторов.
+<!--Изображение размещается внутри элементов с классом wrp-image для которого задан размер меньший, чем размер изображения. У изображения есть класс images. Размести изображение внутри элемента с классом wrp-image так, чтобы изображение занимало 100% ширины родительского элемента и не имело отступа с border-bottom.
 
-Примени значения атрибута data-clip в качестве значения для свойства background-clip. Для свойства text используй запись с вендорным префиксом и только затем обычную запись правила.
+Для этого создай правило css с селектором-классом images и двумя свойствами:
 
-Обрати внимание на то, как изменяется отображение фона (цвета и изображения) в элементе.-->
+width;
+display.-->

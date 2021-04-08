@@ -1,67 +1,22 @@
-/* .text {
-  font-size: 48px;
-  font-weight: 800;
-  text-align: center;
-  color: transparent;
-}
-.items {
-  list-style: none;
+/* .container {
   display: flex;
-  flex-wrap: wrap;
+  padding-top: 15px;
 }
-.item {
+.wrp-image {
   width: 240px;
-  height: 100px;
-  box-sizing: border-box;
-  padding: 10px;
-	border: 10px dashed orangered;
-  margin: 0 auto 1rem;
-  background-color: hsla(0, 0%, 0%, .1);
-  background-image: url(https://i.ibb.co/1nm708q/hands-typing.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; 
-}
-[data-clip="padding-box"] {
-
-}
-[data-clip="content-box"] {
- 
-}
-[data-clip="text"] {
-
-} */
-.text {
-  font-size: 48px;
-  font-weight: 800;
-  text-align: center;
-  color: transparent;
-}
-.items {
-  list-style: none;
+  border: 1px solid gold;
+  margin: 0 15px 15px;
+}  */
+.container {
   display: flex;
-  flex-wrap: wrap;
+  padding-top: 15px;
 }
-.item {
+.wrp-image {
   width: 240px;
-  height: 100px;
-  box-sizing: border-box;
-  padding: 10px;
-  border: 10px dashed orangered;
-  margin: 0 auto 1rem;
-  background-color: hsla(0, 0%, 0%, 0.1);
-  background-image: url(https://i.ibb.co/1nm708q/hands-typing.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  border: 1px solid gold;
+  margin: 0 15px 15px;
 }
-[data-clip='padding-box'] {
-  background-clip: padding-box;
-}
-[data-clip='content-box'] {
-  background-clip: content-box;
-}
-[data-clip='text'] {
-  -webkit-background-clip: text;
-  background-clip: text;
+.images {
+  display: block;
+  width: 100%;
 }
