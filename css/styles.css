@@ -1,47 +1,45 @@
+:root {
+  --s: 50px;
+}
+
 body {
+  font-size: 24px;
+  text-align: center;
   font-family: sans-serif;
+  background: linear-gradient(hsl(189, 100%, 85%), hsl(224, 75%, 25%));
 }
-h2 {
-  text-align: center;
+
+main {
+  height: 200vh;
 }
-.container-fluid {
-  display: flex;
-  justify-content: space-between;
-}
-.container {
-  width: 350px;
-  margin: 0.5rem auto;
-  padding: 0.75rem 0.5rem 0.25rem;
-  border-radius: 1rem;
-  background-color: teal;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.box {
-  width: 100px;
-  margin: 0 0.5rem 0.5rem;
-  border-radius: 0.5rem;
+
+footer {
   color: #fff;
-  background-color: orange;
-  font-size: 18px;
-
-  /* центрируем текст */
-  --h: 2rem;
-  height: var(--h);
-  line-height: var(--h);
-  text-align: center;
 }
 
-.by-position {
-  background-color: palevioletred;
-  position: relative;
-  top: 2rem;
-  bottom: 2rem;
-  left: 2rem;
-  right: 2rem;
+a {
+  width: var(--s);
+  height: var(--s);
+  line-height: var(--s);
+  text-decoration: none;
+  font-size: 36px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 1rem;
+  background-color: firebrick;
 }
-.by-margin {
-  background-color: lightskyblue;
-  margin: 2rem;
+
+/* Напиши код под этой строкой */
+.page-nav {
+  position: fixed;
+}
+
+.up {
+  left: 3rem;
+  top: 3rem;
+}
+
+.down {
+  right: 3rem;
+  bottom: 3rem;
 }

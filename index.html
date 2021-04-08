@@ -8,50 +8,27 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<div class="container-fluid">
-    <section>
-        <h2>Flex</h2>
-        <div class="container display-flex">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-        </div>
-        <div class="container display-flex">
-            <div class="box">4</div>
-            <div class="box by-margin">margin</div>
-            <div class="box">6</div>
-        </div>
-        <div class="container display-flex">
-            <div class="box">7</div>
-            <div class="box">8</div>
-            <div class="box">9</div>
-        </div>
-    </section>
-    <section>
-        <h2>Flex</h2>
-        <div class="container display-flex">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-        </div>
-        <div class="container display-flex">
-            <div class="box">4</div>
-            <div class="box  by-position">relative</div>
-            <div class="box">6</div>
-        </div>
-        <div class="container display-flex">
-            <div class="box">7</div>
-            <div class="box">8</div>
-            <div class="box">9</div>
-        </div>
-    </section>
-</div>
+<header id="up">
+    <h2>Header</h2>
+</header>
+<main></main>
+<footer id="down">
+    <h2>Footer</h2>
+</footer>
+<a href="#up" class="page-nav up">
+    &#11014;
+</a>
+<a href="#down" class="page-nav down">
+    &#11015;
+</a>
 </body>
 </html>
-<!--Для двух элементов, расположенных среди других элементов, задайте смещение на 2rem на все 4-ре стороны. Для этого:
+<!--В html коде есть элементы с атрибутом id и значениями up и down. На каждый такой элемент создана ссылка - с классом up и якорем href="#up", и классом down и якорем href="#down". Эти ссылки используются для навигации по странице - перехода к элементам с соответствующим id по клику на ссылку.
 
-Для элемента с классом by-position задайте свойство position: relative и затем осуществите смещение свойствами top, left, bottom и right.
+Размести ссылки так, чтобы при вертикальной прокрутке окна браузера ссылки оставались неподвижными на своих местах (одна - в верхнем, вторая - в нижнем углу в 3rem от краев).
 
-Для элемента с классом by-margin осуществите смещение свойством margin и значением 2rem.
+Для этого:
 
-Убедись, что элемент со свойством position: relative при смещении проигнорировал значения bottom и right.   -->
+элементу с классом up задай свойства top и left со значением 3rem;
+элементу с классом down задай свойства bottom и right со значением 3rem;
+элементу с классом page-nav задай свойства position с подходящим значением.-->
