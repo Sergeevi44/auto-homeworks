@@ -1,21 +1,33 @@
-body {
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+a {
+  display: block;
+  padding-bottom: 10px;
   text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   font-family: sans-serif;
+  color: #f38181;
+}
+a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #f38181;
+  transition: width 0.5s, left 0.5s;
 }
 
-.box {
-  display: inline-block;
-  --r: 90px;
-  width: var(--r);
-  height: var(--r);
-  border-radius: 50%;
-  background: crimson;
-  cursor: pointer;
-  /* Измени код под этой строкой */
-  transition: 0.8s all ease;
-}
-
-.box:hover {
-  border-radius: 0;
-  background: slateblue;
+a:hover::after {
+  left: 0;
+  width: 100%;
 }
