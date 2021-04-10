@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<div class="container-outer psr">
-    <div class="container">
-        <div class="box">2</div>
-    </div>
+<div class="box alfa">
+    <div class="inner"></div>
 </div>
-<div class="container-outer">
-    <div class="container psr">
-        <div class="box">3</div>
-    </div>
+<div class="box beta">
+    <div class="inner"></div>
 </div>
-<div class="box">1</div>
+<div class="box gamma">
+    <div class="inner"></div>
+</div>
 </body>
 </html>
-<!--Задай элементам с классом box свойство top со значением 0 и убедись в том что элементы нашли ближайшего предка с position: relative или body и расположились в нем как в родительском элементе.
+<!--Надо изменить порядок отображения элементов по оси, перпендикулярной экрану монитора. При этом надо убедиться, что z-index не действует на потомков.
 
-Задай элементам с классом box свойство width со значением 100%
-и убедись в том что элементы заняли всю ширину своего нового родительского элемента с position: relative или body .-->
+Для этого:
+
+Элементу с классом inner задай свойство z-index: 100 и убедись, что эти элементы не перекрываются никакими другими элементами (т.к. у всех остальных элементов значение z-index не задано).
+
+Расположите элементы с классом alfa, beta и gamma в таком порядке
+
+alfa выше всех соседей, со значением 30 свойства z-index;
+beta находится по средине, со значением 20 свойства z-index;
+gamma ниже всех соседей, со значением 10 свойства z-index.
+Убедитесь, что элементы с классом inner теперь частично перекрыты, т.е. z-index не действует на потомков.-->

@@ -1,36 +1,34 @@
-:root {
-  --s: 1.5rem;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  padding-top: 1rem;
-}
-.container-outer {
-  margin: 1rem 0 0;
-  padding: 0.5rem 0;
-  width: 75%;
-  background-color: mediumseagreen;
-}
-.container {
-  background-color: slateblue;
-  padding: 0.5rem 0;
-  width: 50%;
-  height: var(--s);
-}
-.psr {
-  position: relative;
-}
 .box {
-  border-radius: 2rem;
+  display: flex;
+  --s: 60px;
+  width: var(--s);
   height: var(--s);
-  line-height: var(--s);
-  background-color: crimson;
-  text-align: center;
+  border-radius: 50%;
   position: absolute;
-  /* Напиши код под этой строкой */
-  top: 0;
-  width: 100%;
+}
+.inner {
+  z-index: 100;
+  margin: auto;
+  --s: 30px;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background-color: orange;
+}
+.alfa {
+  z-index: 30;
+  background-color: crimson;
+  top: 30px;
+  left: 5px;
+}
+.beta {
+  z-index: 20;
+  background-color: slateblue;
+  left: 25px;
+}
+.gamma {
+  z-index: 10;
+  top: 30px;
+  left: 45px;
+  background-color: mediumseagreen;
 }
