@@ -1,33 +1,61 @@
-ul {
-  display: flex;
-  list-style: none;
+.container {
+  max-width: 480px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 2px 2px 6px 3px hsla(0, 0%, 0%, 0.2);
 }
-li {
-  margin: 0 1rem;
-  position: relative;
+.row {
+  margin-bottom: 1rem;
+  min-height: 60px;
 }
-
-a {
-  display: block;
-  padding-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: sans-serif;
-  color: #f38181;
+.row:nth-of-type(2n) {
+  background-color: crimson;
 }
-a::after {
-  content: '';
-  width: 0;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #f38181;
-  transition: width 0.5s, left 0.5s;
+.row:nth-of-type(2n + 1) {
+  background-color: slateblue;
 }
 
-a:hover::after {
-  left: 0;
-  width: 100%;
+@keyframes fadeInFromLeft {
+  0% {
+    transform: translateX(-2000px) scale(0.6);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateX(50px) scale(0.7);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(2000px) scale(0.6);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateX(-50px) scale(0.7);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.fadeInFromLeft,
+.fadeInFromRight {
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-delay: 500ms;
+}
+.fadeInFromLeft {
+  animation-name: fadeInFromLeft;
+}
+.fadeInFromRight {
+  animation-name: fadeInFromRight;
 }
