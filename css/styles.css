@@ -1,45 +1,33 @@
-:root {
-  --s: 50px;
-}
-
 body {
-  font-size: 24px;
-  text-align: center;
-  font-family: sans-serif;
-  background: linear-gradient(hsl(189, 100%, 85%), hsl(224, 75%, 25%));
-}
-
-main {
   height: 200vh;
+  background: linear-gradient(hsl(189, 100%, 85%), hsl(224, 75%, 25%));
+  text-align: center;
 }
 
-footer {
-  color: #fff;
+.box {
+  margin: auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  width: 360px;
+  height: 200px;
+  background-color: #fff;
+  cursor: initial;
+  /* Добавь свойство под этой строкой */
 }
 
-a {
-  width: var(--s);
-  height: var(--s);
-  line-height: var(--s);
-  text-decoration: none;
-  font-size: 36px;
-  display: inline-block;
-  color: #fff;
-  border-radius: 1rem;
-  background-color: firebrick;
+.btn,
+.box {
+  cursor: pointer;
 }
 
-/* Напиши код под этой строкой */
-.page-nav {
+.modal {
   position: fixed;
-}
-
-.up {
-  left: 3rem;
-  top: 3rem;
-}
-
-.down {
-  right: 3rem;
-  bottom: 3rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: not-allowed;
+  /* Измени код под этой строкой */
+  display: flex;
+  background-color: hsla(0, 0%, 0%, 0.5);
 }
