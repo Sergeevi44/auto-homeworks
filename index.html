@@ -8,24 +8,14 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <form autocomplete="off" method="POST" action="javascript:void(0);">
-<label>
-    <span>Login</span>
-    <input type="text" name="login" placeholder=" " />
-</label>
-<label>
-    <span>Password</span>
-    <input type="password" name="password" placeholder=" " />
-</label>
-<button type="submit">Submit</button>
+<form autocomplete="off" method="POST" action="javascript:void(0);">
+    <label for="id-comment">Comment</label>
+    <textarea id="id-comment" name="comment" placeholder="Share your opinion:"></textarea>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
 </form>
 </body>
 </html>
-<!--Т.к. внутри одной веб-страницы нельзя размещать более одного элемента input вне элемента form, то оберните элементы в html редакторе этим элементом.
+<!--Из-за наличия пробельного символа между открывающим и закрывающим тегом textarea содержимое атрибута placeholder не отображается.
 
-Элементу form задайте три атрибута:
-
-атрибут autocomplete со значением off;
-атрибут method со значением POST;
-атрибут action со значением javascript:void(0);.
-Перед закрытием тега form вставьте элемент button с текстом Submit и атрибутом type со значением submit.-->
+Удали пробелы (или переносы) между открывающим и закрывающим тегом textarea.-->
