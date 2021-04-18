@@ -8,14 +8,52 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<form autocomplete="off" method="POST" action="javascript:void(0);">
-    <label for="id-comment">Comment</label>
-    <textarea id="id-comment" name="comment" placeholder="Share your opinion:"></textarea>
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-</form>
+<div class="container">
+    <section>
+        <h4>Choose only one value</h4>
+        <form action="javascript:void(0);" id="id-radio">
+            <div>
+                <label for="id-red">red</label>
+                <label for="id-green">green</label>
+                <label for="id-blue">blue</label>
+                <label for="id-black">black</label>
+            </div>
+            <div>
+                <input id="id-red" name="colors" type="radio" value="red" />
+                <input id="id-green" name="colors" type="radio" value="green" checked />
+                <input id="id-blue" name="colors" type="radio" value="blue" />
+                <input id="id-black" name="colors" type="radio" value="black" disabled />
+            </div>
+        </form>
+        <button form="id-radio" type="submit">Submit</button>
+        <button form="id-radio" type="reset">Reset</button>
+    </section>
+    <section>
+        <h4>Choose multiple values</h4>
+        <form action="javascript:void(0);" id="id-checkbox">
+            <div>
+                <label for="red">red</label>
+                <label for="green">green</label>
+                <label for="blue">blue</label>
+                <label for="black">black</label>
+            </div>
+            <div>
+                <input id="red" name="colors" type="checkbox" value="red" />
+                <input id="green" name="colors" type="checkbox" value="green" checked />
+                <input id="blue" name="colors" type="checkbox" value="blue" />
+                <input id="black" name="colors" type="checkbox" value="black" disabled />
+            </div>
+        </form>
+        <button form="id-checkbox" type="submit">Submit</button>
+        <button form="id-checkbox" type="reset">Reset</button>
+    </section>
+</div>
 </body>
 </html>
-<!--Из-за наличия пробельного символа между открывающим и закрывающим тегом textarea содержимое атрибута placeholder не отображается.
+<!--В готовой разметке html задай:
 
-Удали пробелы (или переносы) между открывающим и закрывающим тегом textarea.-->
+Элементам с value="black" атрибут disabled.
+Элементам с value="green" атрибут checked.
+Убедись что у элементов с type="radio" можно выбрать только один элемент, а у элементов с type="checkbox" - все элементы, кроме тех что имеют атрибут disabled.
+
+Убедись, что кнопка Обновить возвращает выделение элемента с заданным атрибутом checked.-->
