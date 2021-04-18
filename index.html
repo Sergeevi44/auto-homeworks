@@ -8,74 +8,27 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<div class="container">
-    <form>
-        <label>
-            <span>понедельник</span>
-            <input class="custom-input hidden" type="checkbox" name="weekday" value="Mon" checked />
-        </label>
-        <label>
-            <span>вторник</span>
-            <input class="custom-input hidden" type="checkbox" name="weekday" value="Tue" />
-        </label>
-        <label>
-            <span>среда</span>
-            <input class="custom-input hidden" type="checkbox" name="weekday" value="Wed" />
-        </label>
-        <label>
-            <span>четверг</span>
-            <input class="custom-input hidden" type="checkbox" name="weekday" value="Thu" />
-        </label>
-        <label>
-            <span>пятница</span>
-            <input class="custom-input hidden" type="checkbox" name="weekday" value="Fri" />
-        </label>
-        <label>
-            <span>суббота</span>
-            <input class="custom-input hidden" type="checkbox" name="weekday" value="Sut" disabled />
-        </label>
-        <label>
-            <span>воскресенье</span>
-            <input class="custom-input hidden" type="checkbox" name="weekday" value="Sun" disabled checked />
-        </label>
-        <button type="reset">Отмена</button>
-    </form>
-    <form>
-        <label>
-            <span>понедельник</span>
-            <input class="custom-input hidden" type="radio" name="week" value="Mo" checked />
-        </label>
-        <label>
-            <span>вторник</span>
-            <input class="custom-input hidden" type="radio" name="week" value="Tu" />
-        </label>
-        <label>
-            <span>среда</span>
-            <input class="custom-input hidden" type="radio" name="week" value="We" />
-        </label>
-        <label>
-            <span>четверг</span>
-            <input class="custom-input hidden" type="radio" name="week" value="Thu" />
-        </label>
-        <label>
-            <span>пятница</span>
-            <input class="custom-input hidden" type="radio" name="week" value="Thu" />
-        </label>
-        <label>
-            <span>суббота</span>
-            <input class="custom-input hidden" type="radio" name="weekend" value="Sut" disabled />
-        </label>
-        <label>
-            <span>воскресенье</span>
-            <input class="custom-input hidden" type="radio" name="weekend" value="Sun" disabled checked />
-        </label>
-        <button type="reset">Отмена</button>
-    </form>
-</div>
+<form action="javascript:void(0);">
+    <select class="select-custom">
+        <optgroup label="Developer">
+            <option value="frontend">Frontend</option>
+        </optgroup>
+        <optgroup label="Base skills">
+            <option value="html" selected>HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </optgroup>
+        <optgroup label="Frameworks" disabled>
+            <option value="vue">Vue</option>
+            <option value="react">React + GraphQL</option>
+            <option value="angular">Angular</option>
+        </optgroup>
+    </select>
+    <button type="submit">Отправить</button>
+    <button type="reset">Обновить</button>
+</form>
 </body>
 </html>
-<!--Есть готовая верстка `html` и заданы стили для элементов форм. Убедись в работе элементов, а именно что можно - перемещаться с помощью клавиши `Tab` - и менять значения с помощью `Space`.
-С помощью свойства appearance со значением none скрой вид элементов по умолчанию. Для этого размести запись с вендорными префиксами
--moz-appearance и -webkit-appearance перед записью appearance: none.
+<!--Есть готовый html и css код для стилизации select. У селектора .select-custom закомментировано свойство background-image с преобразованной строкой svg в качестве значения url и линейным градиентом.
 
-Убедись что стилизованные элементы ведут себя также, как и элементы по умолчанию.-->
+Раскомментируй строку и убедись, что svg изображение можно вставлять inline не только в html, но и в css.-->
