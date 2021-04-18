@@ -9,31 +9,23 @@
 </head>
 <body>
 <form action="javascript:void(0);">
-    <select>
-        <optgroup label="Developer">
-        <option value="frontend">Frontend</option>
-        </optgroup>
-        <optgroup label="Base skills">
-        <option value="html" selected>HTML</option>
-        <option value="css">CSS</option>
-        <option value="js">JavaScript</option>
-        </optgroup>
-        <optgroup label="Frameworks" disabled>
-        <option value="vue">Vue</option>
-        <option value="react">React + GraphQL</option>
-        <option value="angular">Angular</option>
-        </optgroup>
-    </select>
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-</form></body>
+    <label for="myBrowser">Browser selection</label>
+    <input id="myBrowser" name="myBrowser" list="browsers" />
+    <datalist id="browsers">
+        <option>Chrome</option>
+        <option>Firefox</option>
+        <option>Internet Explorer</option>
+        <option>Opera</option>
+        <option>Safari</option>
+        <option>Microsoft Edge</option>
+    </datalist>
+</form>
+</body>
 </html>
-<!--Есть список опций, которые надо разделить на три группы. Для этого оберни option элементом optgroup в таком порядке:
+<!--При вводе в элемент input букв, содержащихся в названиях текста элементов option (например буквы o) должен появляться список для выбора.
 
-option с атрибутом value="frontend" должен быть обернут элементом с атрибутом label, имеющим значение Developer;
+Убедись, что пока такой список не появляется. Исправь это следующим образом:
 
-option с атрибутами value и значениями html, css и js должен быть обернут элементом с атрибутом label, имеющим значение Base skills;
-
-option с атрибутами value и значениями vue, react и angular должен быть обернут элементом с атрибутами label, имеющим значение Frameworks и disabled.
-
-Убедись что атрибут disabled не дает возможность выбирать значение для всех option группы.-->
+элементу input добавь атрибут list со значением browsers;
+элементу datalist добавь атрибут id со значением browsers.
+Убедись, что при вводе букв появляется список тех option, текст которых содержит эти буквы.-->
