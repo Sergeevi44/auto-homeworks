@@ -42,7 +42,7 @@ button:hover {
 /* placeholder */
 input::placeholder {
   /* Напиши код под этой строкой; */
-  background-color: rebeccapurple;
+  color: rebeccapurple;
 }
 
 /* focus-within */
