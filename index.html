@@ -8,24 +8,74 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<form action="javascript:void(0);">
-    <label for="myBrowser">Browser selection</label>
-    <input id="myBrowser" name="myBrowser" list="browsers" />
-    <datalist id="browsers">
-        <option>Chrome</option>
-        <option>Firefox</option>
-        <option>Internet Explorer</option>
-        <option>Opera</option>
-        <option>Safari</option>
-        <option>Microsoft Edge</option>
-    </datalist>
-</form>
+<div class="container">
+    <form>
+        <label>
+            <span>понедельник</span>
+            <input class="custom-input hidden" type="checkbox" name="weekday" value="Mon" checked />
+        </label>
+        <label>
+            <span>вторник</span>
+            <input class="custom-input hidden" type="checkbox" name="weekday" value="Tue" />
+        </label>
+        <label>
+            <span>среда</span>
+            <input class="custom-input hidden" type="checkbox" name="weekday" value="Wed" />
+        </label>
+        <label>
+            <span>четверг</span>
+            <input class="custom-input hidden" type="checkbox" name="weekday" value="Thu" />
+        </label>
+        <label>
+            <span>пятница</span>
+            <input class="custom-input hidden" type="checkbox" name="weekday" value="Fri" />
+        </label>
+        <label>
+            <span>суббота</span>
+            <input class="custom-input hidden" type="checkbox" name="weekday" value="Sut" disabled />
+        </label>
+        <label>
+            <span>воскресенье</span>
+            <input class="custom-input hidden" type="checkbox" name="weekday" value="Sun" disabled checked />
+        </label>
+        <button type="reset">Отмена</button>
+    </form>
+    <form>
+        <label>
+            <span>понедельник</span>
+            <input class="custom-input hidden" type="radio" name="week" value="Mo" checked />
+        </label>
+        <label>
+            <span>вторник</span>
+            <input class="custom-input hidden" type="radio" name="week" value="Tu" />
+        </label>
+        <label>
+            <span>среда</span>
+            <input class="custom-input hidden" type="radio" name="week" value="We" />
+        </label>
+        <label>
+            <span>четверг</span>
+            <input class="custom-input hidden" type="radio" name="week" value="Thu" />
+        </label>
+        <label>
+            <span>пятница</span>
+            <input class="custom-input hidden" type="radio" name="week" value="Thu" />
+        </label>
+        <label>
+            <span>суббота</span>
+            <input class="custom-input hidden" type="radio" name="weekend" value="Sut" disabled />
+        </label>
+        <label>
+            <span>воскресенье</span>
+            <input class="custom-input hidden" type="radio" name="weekend" value="Sun" disabled checked />
+        </label>
+        <button type="reset">Отмена</button>
+    </form>
+</div>
 </body>
 </html>
-<!--При вводе в элемент input букв, содержащихся в названиях текста элементов option (например буквы o) должен появляться список для выбора.
+<!--Есть готовая верстка `html` и заданы стили для элементов форм. Убедись в работе элементов, а именно что можно - перемещаться с помощью клавиши `Tab` - и менять значения с помощью `Space`.
+С помощью свойства appearance со значением none скрой вид элементов по умолчанию. Для этого размести запись с вендорными префиксами
+-moz-appearance и -webkit-appearance перед записью appearance: none.
 
-Убедись, что пока такой список не появляется. Исправь это следующим образом:
-
-элементу input добавь атрибут list со значением browsers;
-элементу datalist добавь атрибут id со значением browsers.
-Убедись, что при вводе букв появляется список тех option, текст которых содержит эти буквы.-->
+Убедись что стилизованные элементы ведут себя также, как и элементы по умолчанию.-->
