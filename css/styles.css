@@ -1,41 +1,11 @@
-body {
-  text-align: center;
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
 }
-
-@keyframes cursorMoveOut {
-  from {
-    border-radius: 50%;
-    background: crimson;
-  }
-  to {
-    border-radius: 0;
-    background: slateblue;
-  }
-}
-@keyframes cursorMoveIn {
-  from {
-    border-radius: 0;
-    background: slateblue;
-  }
-  to {
-    border-radius: 50%;
-    background: crimson;
-  }
-}
-
-.box {
-  display: inline-block;
-  --r: 90px;
-  width: var(--r);
-  height: var(--r);
-  border-radius: 50%;
-  background: crimson;
-  cursor: pointer;
-  /* Напиши код под этой строкой */
-  animation: cursorMoveIn 0.8s forwards;
-}
-
-.box:hover {
-  animation: cursorMoveOut 0.8s forwards;
+input {
+  height: 2.5rem;
+  width: 28rem;
+  padding: 1rem 0.75rem;
+  border: 1px solid hsla(0, 0%, 13%, 0.2);
+  border-radius: 0.25rem;
+  outline: none;
 }
